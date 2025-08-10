@@ -1,0 +1,3 @@
+This file exists to ensure the public directory is created. Replace with real assets as needed.
+
+
