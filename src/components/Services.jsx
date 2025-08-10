@@ -2,16 +2,16 @@ import React from 'react'
 
 const services = [
   {
-    title: 'Paket Landing Page - 100K',
-    features: ['Responsive design', 'SEO optimized', 'Contact form', 'Fast loading'],
+    title: 'Paket Basic - 100K-499K',
+    features: ['Landing page responsive', 'Design modern & clean', 'SEO optimized', 'Contact form', 'Fast loading', 'Mobile friendly'],
   },
   {
-    title: 'Paket Company Profile - 250K',
-    features: ['Multi-page website', 'Admin panel', 'Gallery/portfolio', 'Blog system'],
+    title: 'Paket Standard - 500K-1.5M',
+    features: ['Multi-page website', 'Company profile lengkap', 'Admin panel sederhana', 'Gallery/portfolio', 'Blog system', 'Analytics basic'],
   },
   {
-    title: 'Paket E-Commerce - 500K',
-    features: ['Online store', 'Payment gateway', 'Product management', 'Analytics dashboard'],
+    title: 'Paket Premium - 1.5M+',
+    features: ['E-commerce lengkap', 'Payment gateway', 'Product management', 'Analytics dashboard', 'Custom features', 'Priority support'],
   },
 ]
 

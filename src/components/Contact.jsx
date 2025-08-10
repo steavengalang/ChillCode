@@ -21,8 +21,8 @@ export default function Contact() {
             Konsultasi gratis untuk kebutuhan website Anda. Kami siap membantu dari perencanaan hingga launching.
           </p>
           <div className="space-y-3 text-graytext-700">
-            <div>Email: hello@chillcode.dev</div>
-            <div>WhatsApp: +62 812-3456-7890</div>
+            <div>Email: chillcodecs@gmail.com</div>
+            <div>WhatsApp: 081228435753</div>
             <div>Alamat: Indonesia</div>
           </div>
         </div>
