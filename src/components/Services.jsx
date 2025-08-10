@@ -6,12 +6,8 @@ const services = [
     features: ['Landing page responsive', 'Design modern & clean', 'SEO optimized', 'Contact form', 'Fast loading', 'Mobile friendly'],
   },
   {
-    title: 'Paket Standard - 500K-1.5M',
-    features: ['Multi-page website', 'Company profile lengkap', 'Admin panel sederhana', 'Gallery/portfolio', 'Blog system', 'Analytics basic'],
-  },
-  {
-    title: 'Paket Premium - 1.5M+',
-    features: ['E-commerce lengkap', 'Payment gateway', 'Product management', 'Analytics dashboard', 'Custom features', 'Priority support'],
+    title: 'Paket Custom - 500K+',
+    features: ['Website sesuai kebutuhan', 'E-commerce lengkap', 'Payment gateway', 'Admin panel', 'Custom features', 'Priority support'],
   },
 ]
 
