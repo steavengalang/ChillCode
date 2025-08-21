@@ -76,7 +76,7 @@ html {
 
 /* Focus states */
 .focus-ring {
-  @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  @apply focus:outline-none focus:ring-2 focus:ring-primary-700 focus:ring-offset-2;
 }
 
 /* Text gradients */

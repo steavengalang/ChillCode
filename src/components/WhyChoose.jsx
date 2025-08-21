@@ -134,7 +134,7 @@ export default function WhyChoose() {
                 <span className="text-blue-500 text-xl">⚡</span>
                 <div>
                   <span className="font-medium">Fast Performance</span>
-                  <p className="text-sm text-graytext-600">Loading time <3 detik</p>
+                                      <p className="text-sm text-graytext-600">Loading time &lt;3 detik</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
