@@ -52,9 +52,9 @@ const packages = [
     originalPrice: '2M-4M',
     discountedPrice: '1.6M-3.2M',
     discount: '20%',
-    description: 'Website lengkap dengan maintenance',
+    description: 'Website lengkap dengan fitur premium dan maintenance',
     features: [
-      'Website unlimited halaman',
+      'Website 10-15 halaman (sesuai kebutuhan)',
       'Design custom sesuai brand',
       'Advanced SEO optimization',
       'Advanced contact forms',
@@ -241,8 +241,9 @@ export default function Services() {
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary-700 mb-2">10-14 Hari</div>
-              <div className="text-graytext-600">Full Website</div>
-              <div className="text-sm text-graytext-500 mt-1">High Complexity</div>
+              <div className="text-graytext-600">Website Premium</div>
+              <div className="text-sm text-graytext-500 mt-1">Paket Premium</div>
+              <div className="text-xs text-graytext-400 mt-1">10-15 Halaman</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary-700 mb-2">2-8 Minggu</div>
