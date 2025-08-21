@@ -112,7 +112,7 @@ export default function ProblemSolution() {
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-4 font-medium">Harga Mulai</td>
                   <td className="py-4 px-4 text-center text-red-600">500K+</td>
-                  <td className="py-4 px-4 text-center text-green-600 font-bold">100K</td>
+                  <td className="py-4 px-4 text-center text-green-600 font-bold">80K</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-4 font-medium">Timeline</td>

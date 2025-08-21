@@ -47,10 +47,11 @@ export default function Contact() {
   ]
 
   const budgetOptions = [
-    '100K - 300K',
-    '300K - 500K',
-    '500K - 1M',
-    '1M+',
+    '80K - 400K',
+    '400K - 1.2M',
+    '1.2M - 3.2M',
+    '3.2M+',
+    'Custom Project',
     'Belum tentu'
   ]
 

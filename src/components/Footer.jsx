@@ -14,9 +14,9 @@ export default function Footer() {
   ]
 
   const services = [
-    'Landing Page (100K)',
-    'Website Multi-page (300K)',
-    'Website Premium (500K)',
+    'Landing Page (80K-400K)',
+    'Website Multi-page (400K-1.2M)',
+    'Website Premium (1.2M-3.2M)',
     'Custom Development',
     'SEO Optimization',
     'Maintenance & Support'

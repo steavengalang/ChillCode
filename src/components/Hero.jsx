@@ -26,7 +26,7 @@ export default function Hero() {
         <div data-aos="fade-up" className="space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">
             <span className="w-2 h-2 bg-primary-600 rounded-full animate-pulse"></span>
-            Mulai dari 100K
+            Mulai dari 80K
           </div>
           
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-graytext-900">
@@ -38,6 +38,12 @@ export default function Hero() {
             Kami membangun website modern dengan performa tinggi, desain minimalis, dan struktur SEO yang kuat. 
             <span className="font-semibold text-primary-700"> Proses simple, hasil maksimal!</span>
           </p>
+          
+          {/* Independence Day Discount Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-100 text-red-700 rounded-full text-sm font-medium">
+            <span className="text-red-600">🇮🇩</span>
+            Diskon Kemerdekaan 20% - Berlaku sampai 24 Agustus 2025
+          </div>
           
           <div className="flex flex-wrap gap-4">
             <a href="#contact" className="btn-primary text-lg px-8 py-4 hover:scale-105 transition-transform">

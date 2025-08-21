@@ -166,24 +166,41 @@ export default function Process() {
         {/* Timeline Summary */}
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-16" data-aos="fade-up">
           <h3 className="text-2xl font-semibold text-center mb-8 text-graytext-900">
-            Timeline Project
+            Timeline Project Berdasarkan Kompleksitas
           </h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="text-3xl font-bold text-primary-700 mb-2">3-5 Hari</div>
               <div className="text-graytext-600">Landing Page</div>
               <div className="text-sm text-graytext-500 mt-1">Paket Basic</div>
+              <div className="text-xs text-graytext-400 mt-1">Simple & Basic</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary-700 mb-2">7-10 Hari</div>
               <div className="text-graytext-600">Website Multi-page</div>
               <div className="text-sm text-graytext-500 mt-1">Paket Standard</div>
+              <div className="text-xs text-graytext-400 mt-1">Medium Complexity</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary-700 mb-2">10-14 Hari</div>
               <div className="text-graytext-600">Website Lengkap</div>
               <div className="text-sm text-graytext-500 mt-1">Paket Premium</div>
+              <div className="text-xs text-graytext-400 mt-1">High Complexity</div>
             </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-primary-700 mb-2">2-8 Minggu</div>
+              <div className="text-graytext-600">Custom Project</div>
+              <div className="text-sm text-graytext-500 mt-1">Paket Custom</div>
+              <div className="text-xs text-graytext-400 mt-1">Very High Complexity</div>
+            </div>
+          </div>
+          
+          <div className="mt-8 p-4 bg-primary-50 rounded-xl">
+            <h4 className="font-semibold text-primary-800 mb-2 text-center">💡 Info Timeline</h4>
+            <p className="text-sm text-primary-700 text-center">
+              Semakin kompleks fitur dan requirement, semakin lama waktu pengerjaan. 
+              Tim kami akan memberikan estimasi timeline yang akurat saat konsultasi.
+            </p>
           </div>
         </div>
 
