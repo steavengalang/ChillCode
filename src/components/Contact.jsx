@@ -35,14 +35,6 @@ export default function Contact() {
       action: 'Kirim Email',
       link: 'mailto:chillcodecs@gmail.com',
       color: 'bg-blue-500 hover:bg-blue-600'
-    },
-    {
-      icon: '📞',
-      title: 'Telepon',
-      description: 'Bicara langsung dengan tim',
-      action: 'Call Sekarang',
-      link: 'tel:+6281234567890',
-      color: 'bg-purple-500 hover:bg-purple-600'
     }
   ]
 
@@ -208,10 +200,6 @@ export default function Contact() {
                   <span className="w-2 h-2 bg-white rounded-full"></span>
                   Email: <span className="text-white font-medium">Max 2 jam kerja</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-white rounded-full"></span>
-                  Telepon: <span className="text-white font-medium">Max 5 menit</span>
-                </div>
               </div>
             </div>
 
@@ -253,9 +241,6 @@ export default function Contact() {
             <div className="flex flex-wrap gap-4 justify-center">
               <a href="https://wa.me/6281234567890" target="_blank" rel="noreferrer" className="btn-primary text-lg px-8 py-4 hover:scale-105 transition-transform">
                 Chat WhatsApp Sekarang
-              </a>
-              <a href="tel:+6281234567890" className="btn-secondary text-lg px-8 py-4">
-                Call Langsung
               </a>
             </div>
           </div>

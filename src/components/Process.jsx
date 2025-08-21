@@ -173,25 +173,25 @@ export default function Process() {
               <div className="text-3xl font-bold text-primary-700 mb-2">3-5 Hari</div>
               <div className="text-graytext-600">Landing Page</div>
               <div className="text-sm text-graytext-500 mt-1">Paket Basic</div>
-              <div className="text-xs text-graytext-400 mt-1">Simple & Basic</div>
+              <div className="text-sm text-graytext-400 mt-1">Simple & Basic</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary-700 mb-2">7-10 Hari</div>
               <div className="text-graytext-600">Website Multi-page</div>
               <div className="text-sm text-graytext-500 mt-1">Paket Standard</div>
-              <div className="text-xs text-graytext-400 mt-1">Medium Complexity</div>
+              <div className="text-sm text-graytext-400 mt-1">Medium Complexity</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary-700 mb-2">10-14 Hari</div>
               <div className="text-graytext-600">Website Premium</div>
               <div className="text-sm text-graytext-500 mt-1">Paket Premium</div>
-              <div className="text-xs text-graytext-400 mt-1">10-15 Halaman</div>
+              <div className="text-sm text-graytext-400 mt-1">10-15 Halaman</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary-700 mb-2">2-8 Minggu</div>
               <div className="text-graytext-600">Custom Project</div>
               <div className="text-sm text-graytext-500 mt-1">Paket Custom</div>
-              <div className="text-xs text-graytext-400 mt-1">Very High Complexity</div>
+              <div className="text-sm text-graytext-400 mt-1">Very High Complexity</div>
             </div>
           </div>
           

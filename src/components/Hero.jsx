@@ -74,10 +74,10 @@ export default function Hero() {
           
           {/* Trust badges */}
           <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
-            <div className="bg-white px-3 py-1 rounded-full text-xs font-medium text-graytext-700 shadow-lg">
+            <div className="bg-white px-3 py-1 rounded-full text-sm font-medium text-graytext-700 shadow-lg">
               ⚡ Fast Loading
             </div>
-            <div className="bg-white px-3 py-1 rounded-full text-xs font-medium text-graytext-700 shadow-lg">
+            <div className="bg-white px-3 py-1 rounded-full text-sm font-medium text-graytext-700 shadow-lg">
               📱 Mobile First
             </div>
           </div>
