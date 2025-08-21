@@ -1,98 +1,180 @@
 import React from 'react'
 
-const services = [
+const packages = [
   {
-    title: 'Paket Basic - 100K-499K',
-    features: ['Landing page responsive', 'Design modern & clean', 'SEO optimized', 'Contact form', 'Fast loading', 'Mobile friendly'],
+    name: 'Paket Basic',
+    price: '100K',
+    description: 'Landing page simple untuk bisnis baru',
+    features: [
+      'Landing page responsive (1 halaman)',
+      'Design modern & clean',
+      'SEO optimized',
+      'Contact form',
+      'Fast loading (<3 detik)',
+      'Mobile friendly',
+      'Social media integration',
+      'Google Analytics setup'
+    ],
+    timeline: '3-5 hari',
+    popular: false,
+    cta: 'Pilih Paket Basic'
   },
   {
-    title: 'Paket Custom - 500K+',
-    features: ['Website sesuai kebutuhan', 'E-commerce lengkap', 'Payment gateway', 'Admin panel', 'Custom features', 'Priority support'],
+    name: 'Paket Standard',
+    price: '300K',
+    description: 'Multi-page website dengan fitur lengkap',
+    features: [
+      'Website 3-5 halaman',
+      'Design modern & professional',
+      'SEO optimized',
+      'Contact form + WhatsApp',
+      'Fast loading (<3 detik)',
+      'Mobile responsive',
+      'Social media integration',
+      'Google Analytics + Search Console',
+      'Blog section',
+      'Image optimization',
+      'Basic admin panel',
+      'Free hosting 1 tahun'
+    ],
+    timeline: '7-10 hari',
+    popular: true,
+    cta: 'Pilih Paket Standard'
   },
+  {
+    name: 'Paket Premium',
+    price: '500K',
+    description: 'Website lengkap dengan maintenance',
+    features: [
+      'Website unlimited halaman',
+      'Design custom sesuai brand',
+      'Advanced SEO optimization',
+      'Advanced contact forms',
+      'Performance optimization',
+      'Mobile-first design',
+      'Social media integration',
+      'Google Analytics + Tag Manager',
+      'Blog dengan CMS',
+      'Image & video optimization',
+      'Advanced admin panel',
+      'Free hosting + domain 1 tahun',
+      'Maintenance 3 bulan',
+      'Priority support 24/7',
+      'Performance monitoring'
+    ],
+    timeline: '10-14 hari',
+    popular: false,
+    cta: 'Pilih Paket Premium'
+  }
 ]
 
 export default function Services() {
   return (
     <section id="services" className="section">
       <div className="container">
-        <h2 className="text-3xl font-bold mb-10" data-aos="fade-up">Layanan Kami</h2>
+        <div className="text-center mb-16" data-aos="fade-up">
+          <h2 className="text-3xl md:text-4xl font-bold text-graytext-900 mb-4">
+            Pilih Paket yang Tepat
+          </h2>
+          <p className="text-xl text-graytext-700 max-w-3xl mx-auto">
+            Kami menyediakan 3 paket yang bisa disesuaikan dengan kebutuhan dan budget Anda. 
+            Semua paket sudah include hosting dan support.
+          </p>
+        </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {services.map((svc, idx) => (
-            <div className="card" key={idx} data-aos="fade-up" data-aos-delay={idx * 100}>
-              <h3 className="text-xl font-semibold mb-4 text-primary-800">{svc.title}</h3>
-              <ul className="space-y-2 text-graytext-700">
-                {svc.features.map((f) => (
-                  <li key={f} className="flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-primary-700" />
-                    {f}
+        {/* Packages */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {packages.map((pkg, idx) => (
+            <div 
+              key={idx} 
+              className={`card relative ${pkg.popular ? 'ring-2 ring-primary-500 scale-105' : ''}`}
+              data-aos="fade-up" 
+              data-aos-delay={idx * 100}
+            >
+              {pkg.popular && (
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-primary-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                    ⭐ Paling Populer
+                  </span>
+                </div>
+              )}
+              
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-graytext-900 mb-2">{pkg.name}</h3>
+                <div className="text-4xl font-bold text-primary-700 mb-2">
+                  Rp {pkg.price}
+                </div>
+                <p className="text-graytext-600 mb-4">{pkg.description}</p>
+                <div className="text-sm text-graytext-500">
+                  ⏱️ Pengerjaan: {pkg.timeline}
+                </div>
+              </div>
+
+              <ul className="space-y-3 mb-8">
+                {pkg.features.map((feature, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="h-2 w-2 rounded-full bg-primary-700 mt-2 flex-shrink-0" />
+                    <span className="text-graytext-700 text-sm">{feature}</span>
                   </li>
                 ))}
               </ul>
-              <a href="#contact" className="btn-primary mt-6 inline-block">Pilih Paket</a>
+
+              <a href="#contact" className="w-full btn-primary text-center">
+                {pkg.cta}
+              </a>
             </div>
           ))}
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mt-12">
+        {/* Additional Services */}
+        <div className="grid md:grid-cols-3 gap-6 mb-16" data-aos="fade-up">
           {[
-            ['⚡', 'Performance tinggi'],
-            ['🔍', 'SEO-friendly'],
-            ['📱', 'Mobile responsive'],
-            ['🛠️', 'Teknologi terdepan'],
-            ['💰', 'Harga terjangkau'],
-            ['🕒', 'Pengerjaan cepat'],
-          ].map(([icon, text], i) => (
-            <div className="card" key={text} data-aos="fade-up" data-aos-delay={i * 50}>
-              <div className="text-2xl">{icon}</div>
-              <div className="font-medium text-graytext-700">{text}</div>
+            ['⚡', 'Performance tinggi', 'Website loading <3 detik'],
+            ['🔍', 'SEO-friendly', 'Optimized untuk search engine'],
+            ['📱', 'Mobile responsive', 'Perfect di semua device'],
+            ['🛠️', 'Teknologi terdepan', 'React, Next.js, modern stack'],
+            ['💰', 'Harga terjangkau', 'Mulai dari 100K'],
+            ['🕒', 'Pengerjaan cepat', 'Timeline jelas & terjamin']
+          ].map(([icon, text, desc], i) => (
+            <div className="card text-center" key={text} data-aos="fade-up" data-aos-delay={i * 50}>
+              <div className="text-3xl mb-3">{icon}</div>
+              <div className="font-semibold text-graytext-900 mb-2">{text}</div>
+              <div className="text-sm text-graytext-600">{desc}</div>
             </div>
           ))}
         </div>
 
-        <section id="tech" className="section pt-0">
-          <h3 className="text-2xl font-semibold mb-6" data-aos="fade-up">Tech Stack</h3>
-          <div className="flex flex-wrap gap-3" data-aos="fade-up">
-            {['HTML5','CSS3','JavaScript','TypeScript','React','Vite','Next.js','Node.js','MySQL','MongoDB'].map((t)=> (
-              <span key={t} className="px-4 py-2 rounded-full border bg-white shadow-sm">{t}</span>
-            ))}
-          </div>
-        </section>
-
-        <section id="process" className="section pt-0">
-          <h3 className="text-2xl font-semibold mb-6" data-aos="fade-up">Proses Kerja</h3>
-          <ol className="grid md:grid-cols-3 gap-4 list-decimal list-inside">
+        {/* Tech Stack */}
+        <div className="bg-white rounded-2xl shadow-xl p-8 mb-16" data-aos="fade-up">
+          <h3 className="text-2xl font-semibold text-center mb-8 text-graytext-900">
+            Tech Stack Modern
+          </h3>
+          <div className="flex flex-wrap gap-4 justify-center">
             {[
-              'Konsultasi - Diskusi kebutuhan',
-              'Design - Mockup dan approval',
-              'Development - Coding dengan tech modern',
-              'Testing - Quality assurance',
-              'Launch - Go live dan training',
-              'Support - Maintenance dan update',
-            ].map((step, i) => (
-              <li key={i} className="card" data-aos="fade-up" data-aos-delay={i*50}>{step}</li>
-            ))}
-          </ol>
-        </section>
-
-        <section id="testimonials" className="section pt-0">
-          <h3 className="text-2xl font-semibold mb-6" data-aos="fade-up">Testimonials</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {Array.from({length:3}).map((_,i)=> (
-              <div className="card" key={i} data-aos="fade-up" data-aos-delay={i*100}>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="h-10 w-10 rounded-full bg-secondary-200" />
-                  <div>
-                    <div className="font-medium">Client {i+1}</div>
-                    <div className="text-xs text-graytext-500">Company {i+1}</div>
-                  </div>
-                </div>
-                <div className="text-yellow-500">★★★★★</div>
-                <p className="text-graytext-700 mt-2">Pelayanan cepat dan hasil website memuaskan!</p>
-              </div>
+              'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Next.js', 
+              'Tailwind CSS', 'Node.js', 'MySQL', 'MongoDB', 'Vercel', 'Netlify'
+            ].map((tech) => (
+              <span key={tech} className="px-4 py-2 rounded-full border border-gray-200 bg-gray-50 text-graytext-700 hover:border-primary-300 hover:bg-primary-50 transition-colors">
+                {tech}
+              </span>
             ))}
           </div>
-        </section>
+        </div>
+
+        {/* CTA Section */}
+        <div className="text-center" data-aos="fade-up">
+          <p className="text-lg text-graytext-700 mb-6">
+            Tidak yakin paket mana yang cocok? Konsultasi gratis dulu!
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <a href="#contact" className="btn-primary text-lg px-8 py-4 hover:scale-105 transition-transform">
+              Konsultasi Gratis
+            </a>
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noreferrer" className="btn-secondary text-lg px-8 py-4">
+              Chat WhatsApp
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   )
