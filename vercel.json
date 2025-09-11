@@ -4,11 +4,7 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/googlec845c84079b9ff82.html",
-      "destination": "/googlec845c84079b9ff82.html"
-    },
-    {
-      "source": "/(.*)",
+      "source": "/((?!googlec845c84079b9ff82\\.html).*)",
       "destination": "/index.html"
     }
   ],
