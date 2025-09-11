@@ -8,6 +8,12 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'logo.png'],
+      workbox: {
+        navigateFallbackDenylist: [
+          /^\/googlec845c84079b9ff82\.html$/,
+          /^\/google[a-z0-9]+\.html$/
+        ]
+      },
       manifest: {
         name: 'ChillCode',
         short_name: 'ChillCode',
