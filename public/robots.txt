@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chillcode-indol.vercel.app/sitemap.xml
+
+
