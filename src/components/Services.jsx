@@ -3,8 +3,8 @@ import React from 'react'
 const packages = [
   {
     name: 'Paket Basic',
-    originalPrice: '100K-499K',
-    discountedPrice: '80K-399K',
+    originalPrice: '499K',
+    discountedPrice: '399K',
     discount: '20%',
     description: 'Landing page simple untuk bisnis baru',
     features: [
@@ -24,8 +24,8 @@ const packages = [
   },
   {
     name: 'Paket Standard',
-    originalPrice: '500K-1.5M',
-    discountedPrice: '400K-1.2M',
+    originalPrice: '1M',
+    discountedPrice: '800K',
     discount: '20%',
     description: 'Multi-page website dengan fitur lengkap',
     features: [
@@ -49,8 +49,8 @@ const packages = [
   },
   {
     name: 'Paket Premium',
-    originalPrice: '2M-4M',
-    discountedPrice: '1.6M-3.2M',
+    originalPrice: '3M',
+    discountedPrice: '2.4M',
     discount: '20%',
     description: 'Website lengkap dengan fitur premium dan maintenance',
     features: [
@@ -80,7 +80,7 @@ const packages = [
     originalPrice: 'Custom',
     discountedPrice: 'Custom',
     discount: '15%',
-    description: 'Website custom sesuai kebutuhan khusus',
+    description: 'Website custom sesuai kebutuhan khusus (mulai ±3M)',
     features: [
       'Fitur custom sesuai requirement',
       'Design eksklusif & unique',
@@ -125,7 +125,6 @@ export default function Services() {
             Semua paket sudah include hosting dan support.
           </p>
           
-          {/* Independence Day Discount Banner */}
           {isDiscountActive() && (
             <div className="mt-6 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-2xl p-6 max-w-4xl mx-auto">
               <div className="flex items-center justify-center gap-3 mb-3">
@@ -174,7 +173,7 @@ export default function Services() {
                 {pkg.isCustom ? (
                   <div className="mb-2">
                     <div className="text-2xl font-bold text-primary-700">Custom Price</div>
-                    <div className="text-sm text-graytext-500">Sesuai kompleksitas</div>
+                    <div className="text-sm text-graytext-500">Mulai ±3M, sesuai kompleksitas</div>
                   </div>
                 ) : (
                   <div className="mb-2">
@@ -260,7 +259,7 @@ export default function Services() {
             ['🔍', 'SEO-friendly', 'Optimized untuk search engine'],
             ['📱', 'Mobile responsive', 'Perfect di semua device'],
             ['🛠️', 'Teknologi terdepan', 'React, Next.js, modern stack'],
-            ['💰', 'Harga terjangkau', 'Mulai dari 80K dengan diskon'],
+            ['💰', 'Harga terjangkau', 'Mulai dari 399K dengan diskon'],
             ['🕒', 'Pengerjaan cepat', 'Timeline jelas & terjamin']
           ].map(([icon, text, desc], i) => (
             <div className="card text-center" key={text} data-aos="fade-up" data-aos-delay={i * 50}>
@@ -281,7 +280,10 @@ export default function Services() {
               'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Next.js', 
               'Tailwind CSS', 'Node.js', 'MySQL', 'MongoDB', 'Vercel', 'Netlify'
             ].map((tech) => (
-              <span key={tech} className="px-4 py-2 rounded-full border border-gray-200 bg-gray-50 text-graytext-700 hover:border-primary-300 hover:bg-primary-50 transition-colors">
+              <span
+                key={tech}
+                className="px-4 py-2 rounded-full border border-gray-200 bg-gray-50 text-graytext-700 hover:border-primary-300 hover:bg-primary-50 transition-colors"
+              >
                 {tech}
               </span>
             ))}
@@ -300,7 +302,12 @@ export default function Services() {
             <a href="#contact" className="btn-primary text-lg px-8 py-4 hover:scale-105 transition-transform">
               Konsultasi Gratis
             </a>
-            <a href="https://wa.me/6281234567890" target="_blank" rel="noreferrer" className="btn-secondary text-lg px-8 py-4">
+            <a
+              href="https://wa.me/6281234567890"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-secondary text-lg px-8 py-4"
+            >
               Chat WhatsApp
             </a>
           </div>
@@ -309,5 +316,3 @@ export default function Services() {
     </section>
   )
 }
-
-
